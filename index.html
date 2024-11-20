@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech.Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./assets/TestLogo.png" alt="">
+        </div>
+            
+        <nav>
+            <div class="nav-item">
+                 <img src="./assets/home.png" alt="">
+                 <p>Overview</p>
+            </div>
+            <div class="nav-item">
+                <img src="./assets/patient.png" alt="">
+                <p>Patient</p>
+           </div>
+           <div class="nav-item">
+                <img src="./assets/calendar.png" alt="">
+                <p>Schedule</p>
+            </div>
+            <div class="nav-item">
+                <img src="./assets/msg.png" alt="">
+                <p>Message</p>
+           </div>
+           <div class="nav-item">
+                <img src="./assets/credit_card.png" alt="">
+                <p>Transactions</p>
+            </div>
+        </nav>
+
+        <div id="rightSide">
+            <img src="./assets/senior-woman-doctor.png" alt="">
+            <div id="paras">
+                <p style="font-weight: 600;">Dr.Jose Simmons</p>
+                <p>General Practitionier</p>
+            </div>
+            |
+            <img src="./assets/settings_icon.png" alt="">
+            <img src="./assets/more_icon.png" alt="">
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="left">
+            <article>
+                <div id="searchField">
+                    <h3>Patients</h3>
+                    <img src="./assets/search_icon.png" alt="">
+                </div>
+                <div class="layer">
+                    <img src="./assets/Layer 8.png" alt="">
+                    <div class="layer-details">
+                        <h4>Emily Williams</h4>
+                        <p>Female, 18</p>
+                    </div>
+                    <img src="./assets/more_horiz_icon.png" alt="">
+                </div>
+                <div class="layer">
+                    <img src="./assets/Layer 1.png" alt="">
+                    <div class="layer-details">
+                        <h4>Ryan Johnson</h4>
+                        <p>Male, 45</p>
+                    </div>
+                    <img src="./assets/more_horiz_icon.png" alt="">
+                </div>
+                <div class="layer">
+                    <img src="./assets/Layer 3.png" alt="">
+                    <div class="layer-details">
+                        <h4>Brandon Mitchell</h4>
+                        <p>Male, 36</p>
+                    </div>
+                    <img src="./assets/more_horiz_icon.png" alt="">
+                </div>
+                <div class="layer">
+                    <img src="./assets/Layer 2.png" alt="">
+                    <div class="layer-details">
+                        <h4>Jessica Taylor</h4>
+                        <p>Female, 28</p>
+                    </div>
+                    <img src="./assets/more_horiz_icon.png" alt="">
+                </div>
+                <div class="layer">
+                    <img src="./assets/Layer 6.png" alt="">
+                    <div class="layer-details">
+                        <h4>Samantha Johnson</h4>
+                        <p>Female, 56</p>
+                    </div>
+                    <img src="./assets/more_horiz_icon.png" alt="">
+                </div>
+                <div class="layer">
+                    <img src="./assets/Layer 10.png" alt="">
+                    <div class="layer-details">
+                        <h4>Olivia Brown</h4>
+                        <p>Female, 32</p>
+                    </div>
+                    <img src="./assets/more_horiz_icon.png" alt="">
+                </div>
+                <div class="layer">
+                    <img src="./assets/Layer 9.png" alt="">
+                    <div class="layer-details">
+                        <h4>Tyler Davis</h4>
+                        <p>Male, 19</p>
+                    </div>
+                    <img src="./assets/more_horiz_icon.png" alt="">
+                </div>
+                <div class="layer">
+                    <img src="./assets/Layer 4.png" alt="">
+                    <div class="layer-details">
+                        <h4>Kevin Anderson</h4>
+                        <p>Male, 30</p>
+                    </div>
+                    <img src="./assets/more_horiz_icon.png" alt="">
+                </div>
+                <div class="layer">
+                    <img src="./assets/Layer 5.png" alt="">
+                    <div class="layer-details">
+                        <h4>Dylan Thompson</h4>
+                        <p>Male, 36</p>
+                    </div>
+                    <img src="./assets/more_horiz_icon.png" alt="">
+                </div>
+                <div class="layer">
+                    <img src="./assets/Layer 7.png" alt="">
+                    <div class="layer-details">
+                        <h4>Nathan Evans</h4>
+                        <p>Male, 58</p>
+                    </div>
+                    <img src="./assets/more_horiz_icon.png" alt="">
+                </div>
+                
+            </article>
+        </div>
+    
+        <div class="middle">
+            <main>
+                <h3>Diagnosis History</h3>
+                <section id="chart-section">  
+                    <div class="diagnosis-info">
+                        <div class="div">
+                            <h4>Blood Pressure</h4>
+                            <span>
+                                <p>Last 6 months</p>
+                                <img src="./assets/expand_more.png" alt="">
+                            </span>
+                        </div>
+                        <canvas id="bloodPressureChart"></canvas>
+                    </div>
+                    <div id="Diagnosis-details">
+                        <div class="sec">
+                            <p style="font-weight:600;margin-bottom:10px;">Systolic</p>
+                            <p style="font-weight:600;margin-bottom:10px;" id="systValue">0</p>
+                            <span>
+                                <img src="./assets/ArrowUp.png" alt="">
+                                <p id="syslevel">xx</p>
+                            </span>
+                        </div>
+                        <hr>
+                        <div class="sec">
+                            <p style="font-weight:600;margin:10px 0;">Diastolic</p>
+                            <p style="font-weight:600;margin-bottom:10px;" id="diasValue">0</p>
+                            <span>
+                                <img src="./assets/ArrowDown.png" alt="">
+                                <p id="diaslevel">xx</p>
+                            </span>
+                        </div>
+                    </div>   
+                    
+                </section>
+        
+                <section id="health-details">
+                    <div id="box1" class="box">
+                        <img src="./assets/respiratory rate.png" alt="">
+                        <h4>Respiratory Rate</h4>
+                        <h2>0 bpm</h2>
+                        <p style="margin-top: 25px;font-size:14px;">xx</p>
+                    </div>
+                    <div id="box2" class="box">
+                        <img src="./assets/temperature.png" alt="">
+                        <h4>Temperature</h4>
+                        <h2>0</h2>
+                        <p style="margin-top: 25px;font-size:14px;">xx</p>
+                    </div>
+                    <div id="box3" class="box">
+                        <img src="./assets/HeartBPM.png" alt="">
+                        <h4>Heart Rate</h4>
+                        <h2>0 bpm</h2>
+                        <span>
+                            <img src="./assets/ArrowDown.png" alt="">
+                            <p style="font-size:14px;">xx</p>
+                        </span>
+                    </div>
+                </section>
+            </main>
+            
+            <article>
+                <h3>Diagnostic List</h3>
+                
+                <div class="scroll-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Problem/Diagnosis</th>
+                                <th>Description</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                           <!-- set of rows inserted from script -->
+                        </tbody>
+                        
+                    </table>
+                </div>
+                
+            </article>
+        </div>
+    
+        <div class="right">
+            <aside>
+                <img src="" alt="" id="profile">
+                <h3>Patient Name</h3>
+
+                <div class="patientInfo">
+                    <img src="./assets/BirthIcon.png" alt="">
+                    <div class="sub-paras">
+                        <p>Date Of Birth</p>
+                        <p id="dob">dd-mm-yy</p>
+                    </div>
+                </div>
+                <div class="patientInfo">
+                    <img src="./assets/FemaleIcon.png" alt="">
+                    <div class="sub-paras">
+                        <p>Gender</p>
+                        <p id="gender">XX</p>
+                    </div>
+                </div>
+                <div class="patientInfo">
+                    <img src="./assets/PhoneIcon.png" alt="">
+                    <div class="sub-paras">
+                        <p>Contact info.</p>
+                        <p id="no">XXXXXXX</p>
+                    </div>
+                </div>
+                <div class="patientInfo">
+                    <img src="./assets/PhoneIcon.png" alt="">
+                    <div class="sub-paras">
+                        <p>Emergeny contacts</p>
+                        <p id="emgNo">XXXX</p>
+                    </div>
+                </div>
+                <div class="patientInfo">
+                    <img src="./assets/InsuranceIcon.png" alt="">
+                    <div class="sub-paras">
+                        <p>Insurence Provider</p>
+                        <p id="ins">XXXX</p>
+                    </div>
+                </div>
+
+                <button>Show All Information</button>
+            </aside>
+
+            <footer class="footerScroll">
+                <h3>Lab Results</h3>
+                <div class="container">
+                 <!-- set of divs inserted from script -->
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
