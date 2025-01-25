@@ -203,12 +203,12 @@ td,th{
    color: #555;
 }
 article table thead tr th{
-    background-color: #f7f8fa;
+    background-color: #3d75e4;
     color: #333;
 }
-article table thead tr:nth-child(1){
-    background-color: #F6F7F8;
-}
+/* article table thead tr:nth-child(1){
+    background-color: #323d47;
+} */
 
 
 /* right side bar-- aside*/
